@@ -6,23 +6,20 @@ export default function Experience() {
         className="border-l-2 p-6 transition-colors duration-300 hover:border-[var(--accent2)]"
         style={{ borderColor: "var(--accent)", background: "var(--surface)" }}
       >
-        <h3 className="mono text-2xl">AD Infocom Systems</h3>
-        <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
-          Software Engineer Intern (ML Systems) — July 2025 - August 2025
+        <h3 className="mono text-2xl">Turning Data Into Deployable ML Systems</h3>
+        <p className="mt-4 leading-7" style={{ color: "var(--muted)" }}>
+          During my internship at AD Infocom Systems, I worked across the ML lifecycle—from preparing
+          data and engineering features to deploying prediction services through APIs.
         </p>
-        <ul className="mt-5 list-disc space-y-3 pl-5">
+        <p className="mt-5 mono text-sm">I helped build:</p>
+        <ul className="mt-3 list-disc space-y-3 pl-5 leading-7" style={{ color: "var(--muted)" }}>
+          <li>Data pipelines that automated dataset creation and preprocessing.</li>
+          <li>FastAPI services for real-time model inference.</li>
           <li>
-            Designed data preprocessing and feature engineering pipelines using Python, reducing
-            manual overhead by ~35% and cutting ML model training setup time by ~40%
+            Production-ready workflows that connected machine learning models with business
+            applications.
           </li>
-          <li>
-            Developed 3+ FastAPI endpoints for real-time ML model inference and deployment;
-            integrated predictions into client-facing REST APIs
-          </li>
-          <li>
-            Engineered automated data pipelines to generate model-ready datasets from raw inputs,
-            supporting cross-functional data science workflows
-          </li>
+          <li>Scalable backend components supporting data science and engineering teams.</li>
         </ul>
       </article>
     </section>

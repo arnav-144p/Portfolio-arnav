@@ -9,7 +9,7 @@ insert into projects (
 values
 (
   'Retail Demand Forecasting',
-  'Time-series demand forecasting system predicting daily sales across 50+ stores and 3,000+ items. Trained LightGBM achieving MAE 1.38 and RMSE 2.01, outperforming baseline by 22%.',
+  'An end-to-end machine learning system for forecasting retail demand across multiple stores and products. Built to transform historical sales data into accurate demand predictions, helping support inventory planning and business decision-making.',
   array['LightGBM', 'Time Series', 'Python', 'Scikit-learn', 'Pandas'],
   'https://github.com/arnav-144p/Retail-Demand-Forecast',
   true,
@@ -17,9 +17,9 @@ values
 ),
 (
   'Sparrow: AI Voice Coaching Platform',
-  'AI-driven voice analysis system extracting acoustic features (pitch, clarity, pacing) via signal processing. Delivers real-time structured coaching feedback with session-level improvement tracking.',
+  'An AI-powered communication coach that analyzes speech recordings and delivers actionable feedback on clarity, pacing, and vocal delivery. Combines signal processing and machine learning to help users improve their speaking skills over time.',
   array['Machine Learning', 'Signal Processing', 'librosa', 'Scikit-learn', 'Python'],
-  'https://github.com/arnav-144p',
+  'https://github.com/ajayyysainii/sparrow',
   true,
   2
 )

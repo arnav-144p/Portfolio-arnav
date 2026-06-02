@@ -29,13 +29,9 @@ export default function About() {
       <div className="section-label">{"// about"}</div>
       <div className="grid gap-10 md:grid-cols-5">
         <div className="md:col-span-3 text-lg leading-8" style={{ color: "var(--text)" }}>
-          I&apos;m a B.Tech IT student at NIT Jalandhar obsessed with building end-to-end ML
-          pipelines. I&apos;ve interned as an ML Systems Engineer, shipped real forecasting models,
-          and built AI voice coaching tools. I like making machines learn things more than I like
-          sleeping.
-          <p className="mt-6 mono text-sm" style={{ color: "var(--muted)" }}>
-            NIT Jalandhar — B.Tech Information Technology (2023-Present)
-          </p>
+          I&apos;m an AI/ML enthusiast focused on building intelligent systems, data-driven
+          applications, and scalable software. I enjoy turning ideas into products, experimenting
+          with machine learning models, and exploring how AI can solve real-world problems.
         </div>
         <div className="md:col-span-2 space-y-5">
           {Object.entries(skills).map(([group, items]) => (

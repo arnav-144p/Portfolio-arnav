@@ -31,20 +31,28 @@ export default function Hero() {
             </span>
           ))}
         </p>
-        <div className="mt-10 flex gap-5">
+        <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="mono border px-4 py-2 text-sm lowercase transition-colors"
+            className="mono border px-4 py-2 text-sm lowercase transition-colors hover:bg-[var(--accent)] hover:text-[var(--bg)]"
             style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
           >
             [ view projects ]
           </a>
           <a
+            href="/Arnav%20Resume.pdf"
+            download="Arnav-Bhilwariya-Resume.pdf"
+            className="mono border px-4 py-2 text-sm lowercase transition-colors"
+            style={{ borderColor: "var(--border)", color: "var(--text)" }}
+          >
+            [ download resume ]
+          </a>
+          <a
             href="https://github.com/arnav-144p"
             target="_blank"
             rel="noreferrer"
-            className="mono px-1 py-2 text-sm lowercase"
-            style={{ color: "var(--muted)" }}
+            className="mono border px-4 py-2 text-sm lowercase transition-colors hover:bg-[var(--accent2)] hover:text-[var(--bg)]"
+            style={{ borderColor: "var(--accent2)", color: "var(--accent2)" }}
           >
             [ github ↗ ]
           </a>
