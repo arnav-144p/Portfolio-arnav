@@ -3,31 +3,132 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --bg: #08080f;
+  --surface: #0f0f1a;
+  --border: #1e1e35;
+  --text: #e8e8f0;
+  --muted: #5a5a7a;
+  --accent: #9b59ff;
+  --accent2: #ff6b2b;
+  --green: #aaff00;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mono {
+  font-family: var(--font-heading), monospace;
+}
+
+.section-label {
+  color: var(--muted);
+  font-family: var(--font-heading), monospace;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.dot-grid-bg {
+  background-image: radial-gradient(var(--text) 0.65px, transparent 0.65px);
+  background-size: 16px 16px;
+  opacity: 0.04;
+}
+
+.cursor-blink {
+  animation: cursorBlink 1s infinite;
+}
+
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: heroWordStagger 0.55s ease forwards;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: var(--text);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.reveal-fade,
+.reveal-slide {
+  opacity: 0;
+  transition: opacity 550ms ease, transform 550ms ease;
+}
+
+.reveal-fade {
+  transform: translateY(16px);
+}
+
+.reveal-slide {
+  transform: translateY(20px);
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes cursorBlink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes heroWordStagger {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
