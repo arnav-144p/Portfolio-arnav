@@ -4,7 +4,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import Now from "@/components/Now";
+import OpenSource from "@/components/OpenSource";
 import Projects from "@/components/Projects";
 import ScrollRevealObserver from "@/components/ScrollRevealObserver";
 import { getProjectsWithSeed } from "@/lib/supabaseServer";
@@ -27,7 +27,7 @@ export default async function Home() {
         <Projects projects={projects} />
       </div>
       <div data-reveal="fade">
-        <Now />
+        <OpenSource />
       </div>
       <div data-reveal="fade">
         <Contact />

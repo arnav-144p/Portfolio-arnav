@@ -15,13 +15,22 @@ export type Project = {
 
 const seedProjects = [
   {
+    title: "Goal-Directed Active Vision System",
+    description:
+      "Built a goal-directed visual search agent using CLIP ViT-L/14 and Inverse Reinforcement Learning trained on the COCO-Search18 dataset. Outperformed passive baseline on target localization accuracy. Pipeline: frame sampling → CLIP feature extraction → IRL-based policy learning → fixation prediction evaluation.",
+    tags: ["PyTorch", "CLIP ViT-L/14", "OpenCV", "IRL", "COCO-Search18"],
+    github_url: "https://github.com/arnav-144p",
+    featured: true,
+    order_index: 1,
+  },
+  {
     title: "Retail Demand Forecasting",
     description:
       "An end-to-end machine learning system for forecasting retail demand across multiple stores and products. Built to transform historical sales data into accurate demand predictions, helping support inventory planning and business decision-making.",
     tags: ["LightGBM", "Time Series", "Python", "Scikit-learn", "Pandas"],
     github_url: "https://github.com/arnav-144p/Retail-Demand-Forecast",
     featured: true,
-    order_index: 1,
+    order_index: 2,
   },
   {
     title: "Sparrow: AI Voice Coaching Platform",
@@ -30,7 +39,7 @@ const seedProjects = [
     tags: ["Machine Learning", "Signal Processing", "librosa", "Scikit-learn", "Python"],
     github_url: "https://github.com/ajayyysainii/sparrow",
     featured: true,
-    order_index: 2,
+    order_index: 3,
   },
 ];
 
