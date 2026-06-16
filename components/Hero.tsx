@@ -40,7 +40,7 @@ export default function Hero() {
             [ view projects ]
           </a>
           <a
-            href="/Arnav%20Resume.pdf"
+            href="/Arnav's_Resume.pdf"
             download="Arnav-Bhilwariya-Resume.pdf"
             className="mono border px-4 py-2 text-sm lowercase transition-colors"
             style={{ borderColor: "var(--border)", color: "var(--text)" }}
