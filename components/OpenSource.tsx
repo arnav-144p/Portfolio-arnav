@@ -2,7 +2,7 @@ const merged = [
   {
     repo: "pytorch/torchtitan",
     pr: "#3493",
-    title: "Fix broken CI flavor for FSDP+TP+PP+compile combination",
+    title: "Diagnosed a CI failure in the FSDP+TP+PP+compile flavor tracing back to torchcomms managing process groups outside the c10d registry, causing functional collectives to fail resolving PGs under torch.compile",
     href: "https://github.com/pytorch/torchtitan/pull/3493",
   },
   {
@@ -11,6 +11,12 @@ const merged = [
     title:
       "Fixed typo in proxy SSO role mappings (generic_role_mappoings_default_role → generic_role_mappings_default_role) in ui_sso.py",
     href: "https://github.com/BerriAI/litellm/pull/29753",
+  },
+  {
+    repo: "stanfordnlp/dspy",
+    pr: "#9908",
+    title: "Improved the quality and consistency of comments and error messages across three core modules.",
+    href: "https://github.com/stanfordnlp/dspy/pull/9908",
   },
 ];
 

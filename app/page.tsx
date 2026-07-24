@@ -7,10 +7,10 @@ import Nav from "@/components/Nav";
 import OpenSource from "@/components/OpenSource";
 import Projects from "@/components/Projects";
 import ScrollRevealObserver from "@/components/ScrollRevealObserver";
-import { getProjectsWithSeed } from "@/lib/supabaseServer";
+import { projects } from "@/lib/projects";
 
-export default async function Home() {
-  const projects = await getProjectsWithSeed();
+export default function Home() {
+
 
   return (
     <main>

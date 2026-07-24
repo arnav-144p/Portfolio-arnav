@@ -1,4 +1,4 @@
-import type { Project } from "@/lib/supabaseServer";
+import type { Project } from "@/lib/projects";
 
 export default function Projects({ projects }: { projects: Project[] }) {
   return (
@@ -23,16 +23,28 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 </span>
               ))}
             </div>
-            {project.github_url && (
-              <a
-                href={project.github_url}
-                target="_blank"
-                rel="noreferrer"
-                className="mono mt-5 inline-block text-sm"
-              >
-                github ↗
-              </a>
-            )}
+            <div className="mt-5 flex flex-wrap gap-4">
+              {project.live_url && (
+                <a
+                  href={project.live_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mono text-sm"
+                >
+                  live ↗
+                </a>
+              )}
+              {project.github_url && (
+                <a
+                  href={project.github_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mono text-sm"
+                >
+                  github ↗
+                </a>
+              )}
+            </div>
           </article>
         ))}
       </div>
